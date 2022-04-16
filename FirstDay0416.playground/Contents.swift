@@ -14,11 +14,11 @@
 /// - noName: 이름을 전달받지 못했을 때 발생하는 오류
 /// - incorrectAge(age: Int) : 나이가 0세 미만, 150세 초과인 경우 잘못된 나이로 인식하여 오류로 처리
 /// - unknown : 알 수 없는 오류
-enum HelloError: Error {
-    case noName
-    case incorrectAge(age: Int)
-    case unknown
-}
+//enum HelloError: Error {
+//    case noName
+//    case incorrectAge(age: Int)
+//    case unknown
+//}
 /**
  여기에 작성되는 텍스트는 Description 부분에 표기됩니다.
  
@@ -92,16 +92,16 @@ enum HelloError: Error {
  - Throws: 오류가 발생하면 HelloError의 한 케이스를 throw
  - returns: Hello string
  */
-func helloSwift(yourName: String?, yourAge age: Int = 0) throws -> String {
-    guard let name: String = yourName else {
-        throw HelloError.noName
-    }
-    if age > 150 {
-        throw HelloError.incorrectAge(age: age)
-    }
-    
-    return "Hello Swift! My name is \(name)." + (age > 0 ? " I'm \(age) years old." : "")
-}
+//func helloSwift(yourName: String?, yourAge age: Int = 0) throws -> String {
+//    guard let name: String = yourName else {
+//        throw HelloError.noName
+//    }
+//    if age > 150 {
+//        throw HelloError.incorrectAge(age: age)
+//    }
+//
+//    return "Hello Swift! My name is \(name)." + (age > 0 ? " I'm \(age) years old." : "")
+//}
 
 //2.4변수와 상수
 //스위프트에서 변수를 생성하려면 var키워드를 사용합니다. var은 variable의 약자인걸로
