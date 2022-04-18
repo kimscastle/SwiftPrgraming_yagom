@@ -104,10 +104,10 @@ print("이름은 \(SSo.name), 나이는 \(SSo.age), 키는 \(SSo.height)cm")
 //뭔가 상수들이 고정된 배열은 let으로 선언하면되고 변수들이 변하는 배열은 var로 선언하면됨
 
 var names: [String] = ["youth", "picanpie", "Sso", "poding"]
-var emptyArray: [Any] = []
+//var emptyArray: [Any] = []
 //왠만하면 변수의 데이터타입을 선언할때는 any를 사용하면 안되는데 array의 경우엔 다양한 데이터 타입이 들어가니까 여기선 쓰는걸로
 
-print(emptyArray.isEmpty)
+//print(emptyArray.isEmpty)
 print(names.count)
 //파이썬 array랑 똑같이 0번째 부터 순서대로 나열되어있음, 그리고 요소 불러오는 방식도 똑같음
 
@@ -124,7 +124,12 @@ print(names) //["youth", "happy", "picanpie", "eunice", "poding", "Sso", "young"
 names.insert(contentsOf: ["one", "two"], at: 3)
 print(names) //["youth", "happy", "picanpie", "one", "two", "eunice", "poding", "Sso", "young", "Lingo"]
 
+
 //인덱스를 알고싶으면 firstIndex(of: _)
-print(names.firstIndex(of: "youth"))
-print(names.first)
-print(names.last)
+if let index = names.firstIndex(of: "youth"){
+    print(index)
+}
+
+let number: Int = 14
+//print(names.first!)
+//print(names.last!)
