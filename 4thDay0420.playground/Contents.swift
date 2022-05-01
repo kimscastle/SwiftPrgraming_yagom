@@ -21,14 +21,14 @@ enum Schools: String {
     case middle = "중학교"
     case high = "고등학교"
     case college = "대학"
-    case university = "대학교"
+    case university
     case graduate = "대학원"
 }
 
 let highestEducationLevel: Schools = .university
-print(highestEducationLevel)
-
-print("저의 최종학력은 \(highestEducationLevel.rawValue)입니다")
+highestEducationLevel
+highestEducationLevel.rawValue
+print("저의 최종학력은 \(highestEducationLevel)입니다")
 
 enum WeekDays: Character {
     case mon = "월", tue = "화", wed = "수", thu = "목", fri = "금", sat = "토", sun = "일"
